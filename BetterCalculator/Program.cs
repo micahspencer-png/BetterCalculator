@@ -172,7 +172,12 @@ namespace BetterCalculator
                             Console.WriteLine($"{firstNumber} / {secondNumber} = {result4}");
                             proceed3 = true;
                         }
-                        proceed1 = true;
+                        else 
+                        {
+                            Console.WriteLine($"{userInput} Isn't an Option");
+                            proceed3 = false;
+                        }
+                            proceed1 = true;
 
                     }
                    
@@ -188,7 +193,7 @@ namespace BetterCalculator
                         }
                         else
                         {
-                            Console.WriteLine($"{userInput} Isn't a Whole Number");
+                            Console.WriteLine($"{userInput} Isn't an Option");
                             proceed3 = false;
                         }
                     }
